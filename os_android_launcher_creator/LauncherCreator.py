@@ -1,4 +1,4 @@
-import os_android_launcher_crator.LauncherCreatorBp as bp
+import os_android_launcher_creator.LauncherCreatorBp as bp
 
 
 ##################################################################################

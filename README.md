@@ -13,7 +13,7 @@ Install via pip:
 ## Quick Usage       
 From Python:
     
-    import os_android_launcher_crator.LauncherCreator as lc
+    import os_android_launcher_creator.LauncherCreator as lc
     
     lc.create_launcher_icons(custom_android_project_path='/Users/home/Programming/android/sample_project',
                              icon_files_list=['path/to/first/icon1.svg', 'path/to/first/icon2.svg'],
