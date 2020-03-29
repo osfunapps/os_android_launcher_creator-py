@@ -14,7 +14,7 @@ screen_height = False
 
 def create_launcher_icons(custom_android_project_path, icon_files_list, shortcut_keys_to_open_image_asset,  launcher_resize_percent=50, launcher_background_color_hex='#ffffff'):
     """
-    Will create a launcher icon from a given icon
+    Will create a launcher icons from a given icon
     NOTICE: the automation need to run in an open project in Android Studio so make sure you open one to work on!
 
     Args:

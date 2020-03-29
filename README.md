@@ -16,7 +16,7 @@ From Python:
     import os_android_launcher_creator.LauncherCreator as lc
     
     lc.create_launcher_icons(custom_android_project_path='/Users/home/Programming/android/sample_project',
-                             icon_files_list=['path/to/first/icon1.svg', 'path/to/first/icon2.svg'],
+                             icon_files_list=['path/to/first/icon1.svg', 'path/to/second/icon2.svg'],
                              shortcut_keys_to_open_image_asset=['shift', 'b'],
                              launcher_resize_percent=50,
                              launcher_background_color_hex='#ffffff')
