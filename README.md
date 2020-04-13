@@ -13,13 +13,15 @@ Install via pip:
 ## Quick Usage       
 From Python:
     
-    import os_android_launcher_creator.LauncherCreator as lc
+    import os_android_launcher_creator.launcher_creator as lc
     
     lc.create_launcher_icons(custom_android_project_path='/Users/home/Programming/android/sample_project',
                              icon_files_list=['path/to/first/icon1.svg', 'path/to/second/icon2.svg'],
+                             output_path='output/path/for/all/icons',
                              shortcut_keys_to_open_image_asset=['shift', 'b'],
                              launcher_resize_percent=50,
-                             launcher_background_color_hex='#ffffff')
+                             launcher_background_color_hex='#ffffff'
+                             delete_icon_after_done=True)
   
 ## Functions and Signatures
     def create_launcher_icons(custom_android_project_path, icon_files_list, shortcut_keys_to_open_image_asset,  launcher_resize_percent=50, launcher_background_color_hex='#ffffff'):

@@ -2,8 +2,8 @@ from distutils.core import setup
 
 setup(
     name='os_android_launcher_creator',
-    packages=['os_android_launcher_creator'],
-    version='1.00',  # Start with a small number and increase it with every change you make
+    packages=['os_android_launcher_creator', 'os_android_launcher_creator.modules'],
+    version='1.01',  # Start with a small number and increase it with every change you make
     license='MIT',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description='This module will create an app launcher (logo) using Android Studio in all sizes and '
                 'shapes (web, round) and in all dpi (mipmap-anydpi-v26, mipmap-hdpi, mipmap-mdpi, '

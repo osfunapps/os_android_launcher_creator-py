@@ -4,3 +4,5 @@ setup.py
 os_android_launcher_creator/LauncherCreator.py
 os_android_launcher_creator/LauncherCreatorBp.py
 os_android_launcher_creator/__init__.py
+os_android_launcher_creator/download_file.py
+os_android_launcher_creator/test.py
