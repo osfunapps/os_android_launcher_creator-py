@@ -12,30 +12,32 @@ Install via pip:
 
 ## Quick Usage       
 From Python:
-    
-    import os_android_launcher_creator.launcher_creator as lc
-    
-    lc.create_launcher_icons(custom_android_project_path='/Users/home/Programming/android/sample_project',
-                             icon_files_list=['path/to/first/icon1.svg', 'path/to/second/icon2.svg'],
-                             output_path='output/path/for/all/icons',
-                             shortcut_keys_to_open_image_asset=['shift', 'b'],
-                             launcher_resize_percent=50,
-                             launcher_background_color_hex='#ffffff'
-                             delete_icon_after_done=True)
-  
+```python
+import os_android_launcher_creator.launcher_creator as lc
+
+lc.create_launcher_icons(custom_android_project_path='/Users/home/Programming/android/sample_project',
+                         icon_files_list=['path/to/first/icon1.svg', 'path/to/second/icon2.svg'],
+                         output_path='output/path/for/all/icons',
+                         shortcut_keys_to_open_image_asset=['shift', 'b'],
+                         launcher_resize_percent=50,
+                         launcher_background_color_hex='#ffffff'
+                         delete_icon_after_done=True)
+```  
 ## Functions and Signatures
-    def create_launcher_icons(custom_android_project_path, icon_files_list, shortcut_keys_to_open_image_asset,  launcher_resize_percent=50, launcher_background_color_hex='#ffffff'):
-        """
-        Will create a launcher icon from a given icon
-        NOTICE: the automation need to run in an open project in Android Studio so make sure you open one to work on!
-    
-        Args:
-            custom_android_project_path: the current open Android Studio project
-            icon_files_list: a list of all of the icons you wish to turn on to launcher icons
-            shortcut_keys_to_open_image_asset: the list of buttons to hold together in order to open the Image Asset in Android Studio
-            launcher_resize_percent: the resize percents of the icon to fit the frame in the editor
-            launcher_background_color_hex: the color of the background of the icons
-        """
+```python
+def create_launcher_icons(custom_android_project_path, icon_files_list, shortcut_keys_to_open_image_asset,  launcher_resize_percent=50, launcher_background_color_hex='#ffffff'):
+    """
+    Will create a launcher icon from a given icon
+    NOTICE: the automation need to run in an open project in Android Studio so make sure you open one to work on!
+
+    Args:
+        custom_android_project_path: the current open Android Studio project
+        icon_files_list: a list of all of the icons you wish to turn on to launcher icons
+        shortcut_keys_to_open_image_asset: the list of buttons to hold together in order to open the Image Asset in Android Studio
+        launcher_resize_percent: the resize percents of the icon to fit the frame in the editor
+        launcher_background_color_hex: the color of the background of the icons
+    """
+```
 
 ![output](/images/sample.png)
 ## Licence
