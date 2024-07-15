@@ -4,7 +4,7 @@ import os_tools.tools as tools
 import os_file_handler.file_handler as fh
 import time
 from os_btns_automation import btns_automation
-from os_android_launcher_creator.LauncherObj import LauncherObj
+from os_android_launcher_creator.LauncherObj import ImgObj
 from os_file_stream_handler import file_stream_handler as fsh
 
 
@@ -25,10 +25,10 @@ class LauncherCreatorBP:
     LOGGER_TAG = '[Launcher Creator]'
     LAUNCHER_ICON_FILE = 'ic_launcher'
 
-    def __init__(self, custom_android_project_path, launcher_obj_list: list[LauncherObj], shortcut_keys_to_open_image_asset, launcher_resize_percent, launcher_background_color_hex, skip_if_output_dir_exists):
+    def __init__(self, custom_android_project_path, img_obj_list: list[ImgObj], shortcut_keys_to_open_image_asset, launcher_resize_percent, launcher_background_color_hex, skip_if_output_dir_exists):
         self.logger = lh.Logger(name=self.LOGGER_TAG)  # build the logger
         self.custom_android_project_path = custom_android_project_path
-        self.launcher_obj_list = launcher_obj_list
+        self.launcher_obj_list = img_obj_list
         self.shortcut_keys_to_open_image_asset = shortcut_keys_to_open_image_asset
         self.launcher_resize_percent = launcher_resize_percent
         self.launcher_background_color_hex = launcher_background_color_hex
@@ -68,7 +68,7 @@ class LauncherCreatorBP:
 
         self.print_ln()
 
-    def run_cycle(self, launcher_obj: LauncherObj):
+    def run_cycle(self, launcher_obj: ImgObj):
 
         import random
         random_suffix = f'_{str(random.randint(0, 99999))}'
